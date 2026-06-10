@@ -1,108 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QuickBite 🍽️ - Food Ordering System</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-    <!-- ── TOP NAV ── -->
-    <nav class="topnav">
-        <div class="nav-brand">
-            <span class="brand-icon">🍽️</span>
-            <span class="brand-name">QuickBite</span>
-        </div>
-        <div class="nav-links">
-            <button class="nav-btn active" onclick="showPage('home')">Home</button>
-            <button class="nav-btn" onclick="showPage('orders')">My Orders</button>
-            <button class="nav-btn" onclick="showPage('track')">Track</button>
-        </div>
-        <div class="cart-bubble" onclick="showPage('cart')">
-            🛒 <span id="cartCount">0</span>
-        </div>
-    </nav>
-
-    <!-- ── HERO ── -->
-    <section class="hero" id="page-home">
-        <div class="hero-content">
-            <div class="hero-tag">🚀 Delivery in 30 mins</div>
-            <h1 class="hero-title">Hungry?<br><span class="hero-accent">We got you.</span></h1>
-            <p class="hero-sub">Order from the best restaurants in Ghaziabad — hot, fresh, and fast.</p>
-            <p class="hero-credits">Sanghmitra Shakya &nbsp;·&nbsp; 2025B15410312 &nbsp;·&nbsp; CSE DS 3</p>
-            <button class="cta-btn" onclick="scrollToRestaurants()">Browse Restaurants ↓</button>
-        </div>
-        <div class="hero-visual">
-            <div class="food-orbit">
-                <span class="orbit-item o1">🍕</span>
-                <span class="orbit-item o2">🍔</span>
-                <span class="orbit-item o3">🥡</span>
-                <span class="orbit-item o4">🍛</span>
-                <span class="orbit-item o5">🍜</span>
-            </div>
-            <div class="hero-plate">🍽️</div>
-        </div>
-    </section>
-
-    <!-- ── RESTAURANTS ── -->
-    <section class="section" id="restaurants-section">
-        <div class="section-header">
-            <h2 class="section-title">Top Restaurants</h2>
-            <p class="section-sub">Pick your favourite spot</p>
-        </div>
-        <div class="restaurants-grid" id="restaurantsGrid">
-            <div class="loading-spinner">Loading restaurants...</div>
-        </div>
-    </section>
-
-    <!-- ── MENU PAGE ── -->
-    <section class="section hidden" id="page-menu">
-        <button class="back-btn" onclick="showPage('home')">← Back</button>
-        <div id="menuHeader" class="menu-header"></div>
-        <div class="menu-grid" id="menuGrid"></div>
-    </section>
-
-    <!-- ── CART PAGE ── -->
-    <section class="section hidden" id="page-cart">
-        <button class="back-btn" onclick="showPage('home')">← Back</button>
-        <h2 class="section-title">Your Cart 🛒</h2>
-        <div class="cart-layout">
-            <div id="cartItems" class="cart-items"></div>
-            <div class="checkout-panel" id="checkoutPanel"></div>
-        </div>
-    </section>
-
-    <!-- ── ORDERS PAGE ── -->
-    <section class="section hidden" id="page-orders">
-        <button class="back-btn" onclick="showPage('home')">← Back</button>
-        <h2 class="section-title">All Orders 📋</h2>
-        <div id="ordersList" class="orders-list"></div>
-    </section>
-
-    <!-- ── TRACK PAGE ── -->
-    <section class="section hidden" id="page-track">
-        <button class="back-btn" onclick="showPage('home')">← Back</button>
-        <h2 class="section-title">Track Order 📍</h2>
-        <div class="track-box">
-            <input type="number" id="trackOrderId" placeholder="Enter Order ID" class="track-input">
-            <button class="cta-btn small" onclick="trackOrder()">Track</button>
-        </div>
-        <div id="trackResult" class="track-result"></div>
-    </section>
-
-    <!-- ── ORDER SUCCESS MODAL ── -->
-    <div class="modal-overlay hidden" id="successModal">
-        <div class="modal-box success-modal">
-            <div class="success-icon">🎉</div>
-            <h2>Order Placed!</h2>
-            <div id="successDetails"></div>
-            <button class="cta-btn" onclick="closeModal()">Track My Order</button>
-        </div>
-    </div>
-
-    <script src="js/script.js"></script>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-z0kgJgkj.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CU7XYGl7.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
